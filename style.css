@@ -1,0 +1,90 @@
+ @page {
+    size: A4;
+    margin: 20mm;
+ }
+ body {
+    width: 210mm;
+    min-height: 297mm;
+    margin: 0 auto;
+    box-sizing: border-box;
+    background-color: rgb(194, 190, 178);   
+} 
+header {
+    justify-content: space-between;
+    display: flex;
+    border: none;
+}
+img {
+    transition: transform .2s linear;
+    width: 100px;
+    max-width: 400px;
+    object-fit: cover;
+    vertical-align: left;
+    border-radius: 50%;
+}
+img:hover {
+    transform: scale(1.5);
+}
+.wrapper {
+    padding: 0 15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: right;
+    gap: 5rem;
+}
+.intro {
+    flex: 1;
+}
+a {
+    text-decoration: none;
+    color: rgb(5,5,5);
+}
+hr {
+    height: 4px;
+    background-color: rgb(5,5,5);
+    border-radius: 10px;
+}
+
+h1:nth-of-type(1) {
+    font-weight: bolder;
+    color: rgb(5,5,5);
+    text-align: left;
+}
+h3 {
+    margin-top: 0px;
+    color: rgb(5,5,5);
+    text-align: left;
+}
+.profile-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+.icon {
+    font-size: 22px;
+    margin-right: 8px;     
+}
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+li::before {
+    font-size: xx-large;
+    content: "◉";
+    padding-top: 5%;
+    margin-left: 12px;
+}
+#main {
+    line-height: 15px;
+    text-align: right;
+    color: rgb(5,5,5);
+}
+#allsubheadings {
+    color: black;
+}
+#content {
+    font-size: larger;
+    color: black;
+}
